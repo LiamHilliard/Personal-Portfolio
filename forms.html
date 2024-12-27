@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Form test one</title>
+    <link rel="icon" type="image/jpg" href="files/vibin.jpg" />
+  </head>
+  <body>
+    <h1>Form Test One</h1>
+    <form accept="index.php" method="POST" enctype="multipart/form-data">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" placeholder="username" required /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" required /><br />
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="example@example.com"
+        required
+      /><br />
+      <label for="phone">Phone #:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      /><br />
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" required /><br />
+      <label for="gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label><br />
+      <label for="quantity">Quantity:</label><br />
+      <input
+        type="number"
+        id="quantity"
+        min="0"
+        max="99"
+        value="1"
+        required
+      /><br />
+
+      <label for="payment">Payment:</label>
+      <select id="payment">
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="other">Other</option></select
+      ><br />
+      <label for="subscribe">Subscribe:</label>
+      <input type="checkbox" id="subscribe" name="subscribe" /><br />
+      <label for="feedback">Feedback:</label><br />
+      <textarea id="feedback" rows="4" cols="30"></textarea>
+      <br />
+      <label for="file">file:</label>
+      <input type="file" id="file" name="file" required /><br />
+
+      <input type="reset" />
+      <input type="submit" /><br />
+    </form>
+  </body>
+</html>
